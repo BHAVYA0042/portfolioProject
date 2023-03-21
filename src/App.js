@@ -1,11 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import CollapsibleExample from './components/navbar';
+import "./css/app.scss"
+import Example from './components/hamburger';
+import Navbar from './components/navbar';
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Landing from './components/landing';
 
 function App() {
   return (
     <div className="App">
-      <CollapsibleExample></CollapsibleExample>
+      <BrowserRouter>
+        <div className='left'>
+          <Navbar></Navbar>
+          {/* <Example></Example> */}
+        </div>
+        <div className='right'>
+          <Routes>
+            <Route path="/" element={<Landing/>} />
+            <Route path="/aboutMe" element={<Landing/>} />
+            <Route path="/skills" element={<Landing/>} />
+            <Route path="/projects" element={<Landing/>} />
+            <Route path="/education" element={<Landing/>} />
+            <Route path="/contact" element={<Landing/>} />
+
+          </Routes>
+        </div>
+      </BrowserRouter>
+   
+      
     </div>
   );
 }

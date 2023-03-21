@@ -1,26 +1,36 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useEffect,useState } from 'react'
+import dataServiceObj from '../dataservice';
+import "../css/navbar.scss";
+import {NavLink} from 'react-router-dom';
 
-function CollapsibleExample() {
+export default function Navbar() {
+    const [data,setData]=useState({});
+    useEffect(()=>{
+        let cat="aboutMe"
+        dataServiceObj.getCategory(cat).then(resData=>{
+            setData(resData.data);
+        })
+    },[])
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">About Me</Nav.Link>
-            <Nav.Link href="#pricing"></Nav.Link>
-          </Nav>
-          <Nav>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
+    <div className='navbar'>
+        <section className='intro'>
+            <img src={data.image} alt="" />
+            <h1>{`${data.fname} ${data.lname}`}</h1>
+            <p><span>{data.role}</span>{` in ${data.location}`}</p>
 
-export default CollapsibleExample;
+        </section>
+        <section className='links'>
+            <ul>
+                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/aboutMe">About</NavLink>
+                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/skills">Skills</NavLink>
+                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/projects">Projects</NavLink>
+                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/education">Education</NavLink>
+                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/contact">Contact</NavLink>
+            </ul>
+        </section>
+        <section className='footer'>
+            <p>	&copy; Copyright &copy;2023 All rights reserved</p>
+        </section>
+    </div>
+  )
+}
