@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-import dataServiceObj from './dataservice';
+import dataServiceObj from "../dataservice";
 
 
 export default function Education() {
