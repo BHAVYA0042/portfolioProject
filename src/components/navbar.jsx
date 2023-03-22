@@ -1,36 +1,32 @@
 import React, { useEffect,useState } from 'react'
 import dataServiceObj from '../dataservice';
-import "../css/navbar.scss";
+
 import {NavLink} from 'react-router-dom';
+import DesktopNav from './desktopNav';
+import Example from './hamburger';
 
 export default function Navbar() {
     const [data,setData]=useState({});
+    // var width=window.innerWidth;
+    const [width,setWidth]=useState(window.innerWidth);
+
     useEffect(()=>{
-        let cat="aboutMe"
+        let cat="aboutMe";
         dataServiceObj.getCategory(cat).then(resData=>{
             setData(resData.data);
-        })
-    },[])
-  return (
-    <div className='navbar'>
-        <section className='intro'>
-            <img src={data.image} alt="" />
-            <h1>{`${data.fname} ${data.lname}`}</h1>
-            <p><span>{data.role}</span>{` in ${data.location}`}</p>
+        });
 
-        </section>
-        <section className='links'>
-            <ul>
-                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/aboutMe">About</NavLink>
-                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/skills">Skills</NavLink>
-                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/projects">Projects</NavLink>
-                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/education">Education</NavLink>
-                <NavLink className={(nav)=>nav.isActive ? "active" : "inactive"} to="/contact">Contact</NavLink>
-            </ul>
-        </section>
-        <section className='footer'>
-            <p>	&copy; Copyright &copy;2023 All rights reserved</p>
-        </section>
-    </div>
+        window.addEventListener("resize",()=>setWidth(window.innerWidth))
+    },[]);
+
+  return (
+    <>
+    {(width<=900)?
+    <Example data={data}/>
+    :
+    <DesktopNav data={data}/>
+}
+    </>
+
   )
 }

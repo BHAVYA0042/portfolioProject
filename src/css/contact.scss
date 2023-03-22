@@ -1,0 +1,43 @@
+.contact{
+    display: flex;
+    padding: 3rem 2rem;
+}
+.contact_left{
+    width: 45%;
+    section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+        a{
+            font-size: 3rem;
+            padding: 2rem 3rem;
+            background-color: #f2f3f7;
+            border-radius: 5px;
+            // margin-bottom: 2rem;
+            // margin-right: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+            margin-left: 2rem;
+        }
+    }
+
+}
+.contact_right{
+    width: 55%;
+    float: right;
+    padding-right: 4rem ;
+    form{
+        display: flex;
+        flex-direction: column;
+        input,textarea{
+            font-size: 1.8rem;
+            padding: 1.5rem;
+            background-color: rgb(242 243 247);
+            margin-bottom: 2rem;
+            border: none;
+        }
+    }
+    
+}

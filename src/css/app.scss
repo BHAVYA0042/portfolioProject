@@ -1,13 +1,24 @@
 .App{
-    margin: 0 1%;
+    // margin: 0 1%;
 
     display: flex;
 }
 .right{
     width: 77%;
-    background-color: blanchedalmond;
+    padding: 2rem;
+
+    // background-color: blanchedalmond;
 }
 .left{
     width: 23%;
 
+}
+
+@media (max-width: 900px) {
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 0%;
+    }
 }

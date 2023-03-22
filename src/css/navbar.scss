@@ -5,9 +5,18 @@
     font-size: 1.5rem;
     background-color: #f2f3f7;
 }
+.phoneNavbar{
+    max-width: 25rem;
+}
+.hamburger{
+    position: absolute;
+    margin-right: 1rem;
+}
 .intro{
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     img{
         width: 18rem;
         height: 18rem;

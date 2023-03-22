@@ -3,6 +3,7 @@ import Example from './components/hamburger';
 import Navbar from './components/navbar';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import Landing from './components/landing';
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route path="/skills" element={<Landing/>} />
             <Route path="/projects" element={<Landing/>} />
             <Route path="/education" element={<Landing/>} />
-            <Route path="/contact" element={<Landing/>} />
+            <Route path="/contact" element={<Contact/>} />
 
           </Routes>
         </div>
