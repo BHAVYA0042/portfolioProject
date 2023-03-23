@@ -3,12 +3,13 @@
     display: flex;
     flex-direction: row-reverse;
     height: 100vh;
-    width: 100%;
+    // width: 100%;
+    // padding: 2%;
 }
 #container1 {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+//   margin: 1rem;
 }
 #photo {
    width: 40%;
@@ -25,16 +26,16 @@
 }
 
 img{
-    height: 40rem;
-    width: 40rem;
+    height: 30rem;
+    width: 30rem;
     border-radius: 50%; 
 }
 #container2{
-    padding-top: 40px;
-    padding-bottom: 5rem;
+    // padding-top: 40px;
+    // padding-bottom: 5rem;
     padding-right: 2rem;
-    justify-content: space-around;
-    padding:1rem;
+    // justify-content: space-around;
+    // padding:1rem;
     display: flex;
     flex-direction: column;
 }

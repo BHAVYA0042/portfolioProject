@@ -23,7 +23,7 @@ export default function About() {
 
         <div id="container1">
           <div id="photo">
-            <img width="50%" src={imgUrl} alt="photo" />
+            <img width="50%" src={imgUrl} alt="" />
           </div>
           <div id="location">
             <h2>{loc}</h2>
