@@ -17,7 +17,7 @@ export default function Contact() {
     <div className='contact'>
       <div className="contact_left">
         <section>
-          <a href="mailto:">
+          <a href={`mailto:${data.email}`}>
             <i class="bi bi-envelope"></i>
           </a>
           <p>{data.email}</p>
