@@ -1,5 +1,5 @@
 .navbar{
-    padding: 9.5% 2%;
+    padding: 9.5% 2% !important;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -11,6 +11,8 @@
 .hamburger{
     position: absolute;
     margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 3rem;
 }
 .intro{
     align-items: center;
