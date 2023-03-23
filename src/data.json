@@ -1,0 +1,120 @@
+{
+    "content":[
+        {   
+            "category":"aboutMe",
+            "fname":"Bhavya",
+            "lname":"Gupta",
+            "role":"Analyst",
+            "location":"Gurgaon",
+            "image":"https://drive.google.com/uc?id=1FfqnTR-rs-3nBWDRgrckGhmdMJK8WRu8",
+            "summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "category":"skills",
+            "skillData":[
+                {
+                    "name":"ReactJS",
+                    "rating":4
+                },
+                {
+                    "name":"HTML",
+                    "rating":4
+                },
+                {
+                    "name":"CSS",
+                    "rating":4
+                },
+                {
+                    "name":"Javascript",
+                    "rating":4
+                },
+                {
+                    "name":"AngularJS",
+                    "rating":2
+                },
+                {
+                    "name":"Bootstrap",
+                    "rating":3
+                }
+                
+            ]
+        },
+        {
+            "category":"skills",
+            "skillData":[
+                {
+                    "name":"ReactJS",
+                    "rating":4
+                },
+                {
+                    "name":"HTML",
+                    "rating":4
+                },
+                {
+                    "name":"CSS",
+                    "rating":4
+                },
+                {
+                    "name":"Javascript",
+                    "rating":4
+                },
+                {
+                    "name":"AngularJS",
+                    "rating":2
+                },
+                {
+                    "name":"Bootstrap",
+                    "rating":3
+                }
+                
+            ]
+        },
+        {
+            "category":"projects",
+            "skillData":[
+                {
+                    "name":"Google Meet Clone",
+                    "role":"Frontend Developer",
+                    "tech":["ReactJs","CSS","HTML"]
+                },
+                {
+                    "name":"HTML",
+                    "role":"Frontend Developer",
+                    "tech":["ReactJs","CSS","HTML"]
+                }
+                
+            ]
+        },
+        {
+            "category":"education",
+            "eduData":[
+                {   
+                    "courseName":"Class 10",
+                    "institution":"SVM Public School",
+                    "year":"2016",
+                    "location":"Jaipur,Rajasthan"
+                },
+                {   
+                    "courseName":"Class 12",
+                    "institution":"SVM Public School",
+                    "year":"2018",
+                    "location":"Jaipur,Rajasthan"
+                },
+                {   
+                    "courseName":"Bachelor of Engineering",
+                    "institution":"CMR Institute Of Technology",
+                    "year":"2018-2022",
+                    "location":"Bangalore,Karnataka"
+                }
+                
+            ]
+        },
+        {
+            "category":"contactMe",
+            "linkedin":"https://www.linkedin.com/in/bhavya-gupta-3327721ab",
+            "dpn":"https://people.deloitte/profile/bhavyagupta29",
+            "email":"bhavyagupta29@deloitte.com"
+        }
+        
+    ]
+}
