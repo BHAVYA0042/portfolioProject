@@ -9,65 +9,84 @@
             "image":"https://drive.google.com/uc?id=1FfqnTR-rs-3nBWDRgrckGhmdMJK8WRu8",
             "summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         },
+      
         {
             "category":"skills",
-            "skillData":[
+            "skill": [
                 {
-                    "name":"ReactJS",
-                    "rating":4
-                },
-                {
-                    "name":"HTML",
-                    "rating":4
-                },
-                {
-                    "name":"CSS",
-                    "rating":4
-                },
-                {
-                    "name":"Javascript",
-                    "rating":4
-                },
-                {
-                    "name":"AngularJS",
-                    "rating":2
-                },
-                {
-                    "name":"Bootstrap",
-                    "rating":3
-                }
+                  "tech": "Java",
+                  "star": "4"
                 
-            ]
-        },
-        {
-            "category":"skills",
-            "skillData":[
-                {
-                    "name":"ReactJS",
-                    "rating":4
                 },
                 {
-                    "name":"HTML",
-                    "rating":4
+                  "tech": "Python",
+                  "star": "3.5"
                 },
                 {
-                    "name":"CSS",
-                    "rating":4
-                },
-                {
-                    "name":"Javascript",
-                    "rating":4
-                },
-                {
-                    "name":"AngularJS",
-                    "rating":2
-                },
-                {
-                    "name":"Bootstrap",
-                    "rating":3
+                  "tech": "C / C++",
+                  "star": "2.5"
                 }
+              ],
+              
+              "database": [
+                {
+                  "tech": "MySql",
+                  "star": "3.5"
                 
-            ]
+                },
+                {
+                  "tech": "Firebase",
+                  "star": "2.5"
+                },
+                {
+                  "tech": "Sql",
+                  "star": "3"
+                }
+               
+              ],
+            
+            
+            
+            
+              "general": [
+                {
+                  "tech": "Communication",
+                  "star": "4.5"
+                
+                },
+                {
+                  "tech": "Customer service",
+                  "star": "4"
+                },
+                {
+                  "tech": "Problem-solving",
+                  "star": "3.5"
+                },
+                {
+                  "tech": "Time management",
+                  "star": "4"
+                }
+              ],
+            
+            
+              "wt": [
+                {
+                  "tech": "Html",
+                  "star": "5"
+                
+                },
+                {
+                  "tech": "Css",
+                  "star": "3.5"
+                },
+                {
+                  "tech": "Bootstrap",
+                  "star": "2.5"
+                }
+              ]
+            
+                
+           
         },
         {
             "category":"projects",

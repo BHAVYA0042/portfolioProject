@@ -6,6 +6,7 @@ import Contact from "./components/contact";
 import Education from "./components/education";
 import About from "./components/about";
 import Project from "./components/projects";
+import Skills from "./components/skills";
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         </div>
         <div className='right'>
           <Routes>
-            <Route path="/" element={<Landing/>} />
+            <Route path="/" element={<About/>} />
             <Route path="/aboutMe" element={<About/>} />
-            <Route path="/skills" element={<Landing/>} />
+            <Route path="/skills" element={<Skills/>} />
             <Route path="/projects" element={<Project/>} />
             <Route path="/education" element={<Education/>} />
             <Route path="/contact" element={<Contact/>} />
