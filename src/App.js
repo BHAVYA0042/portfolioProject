@@ -5,6 +5,7 @@ import Landing from './components/landing';
 import Contact from "./components/contact";
 import Education from "./components/education";
 import About from "./components/about";
+import Project from "./components/projects";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={<Landing/>} />
             <Route path="/aboutMe" element={<About/>} />
             <Route path="/skills" element={<Landing/>} />
-            <Route path="/projects" element={<Landing/>} />
+            <Route path="/projects" element={<Project/>} />
             <Route path="/education" element={<Education/>} />
             <Route path="/contact" element={<Contact/>} />
 
