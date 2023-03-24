@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import dataServiceObj from "../dataservice";
+import "../css/education.css"
 
 
 export default function Education() {
@@ -18,13 +19,13 @@ export default function Education() {
 
 
   let result=dataArray.map((item)=>
-  <div>
-    <span>{item.courseName}</span>&nbsp;|
-    <span>{item.institution}</span>&nbsp;|
-    <span>{item.year}</span>&nbsp;|
-    <span>{item.location}</span><br/>
+  <div className='main'>
+    <h3>{item.courseName}</h3>&nbsp;<br />
+    <span><i class="fa-solid fa-building-columns">&nbsp;&nbsp;</i>{item.institution}</span>&nbsp;<br />
+    <span><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;{item.year}</span>&nbsp;<br />
+    <span><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{item.location}</span><br/><br />
     <br/>
-  </div>
+    </div>
   
   )
   
