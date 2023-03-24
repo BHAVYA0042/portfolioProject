@@ -33,7 +33,7 @@ export default function Education() {
   return (
     <div>
       <div>
-        <span>Result:{result}</span>
+        <span>{result}</span>
         
         
 
